@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h3{
+    margin: 0;
+}
+
+
+.projectDiv{
+    display: flex;
+    
+    width: 100%;
+     
+    height: 100vh;
+
+    margin: 0;
+    padding: 0;
+
+ }
+
+ @media (max-width:768px) {
+    .projectDiv{
+        flex-direction: column;
+    }
+    .videoContainer{
+            height: 600px;
+
+    }
+    
+    
+ }
+
+
+ .likePost{
+    border: 2px solid;
+    width: 100%;
+    height: auto;
+}
+
+.videoContainer{
+    
+    width: 100%;
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* border: 10px solid; */
+     
+     
+}
+.videoBox{
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    /* border: 2px solid; */
+    height: 550px;
+    width: 320px;
+
+     
+     
+}
+
+#inputFile{
+    display: none;
+}
+
+  .reel{
+    height: 550px;
+    width: 300px;  
+    object-fit: cover; 
+}
+ 
+ 
+/* .videoDiv{
+    height: 500px;
+} */
+ .profilebar{
+    bottom: 30px;
+ }
+      
+ 
+
+.videoDiv{
+    /* border: 1px solid; */
+    position: relative;
+    width: 300px;
+    height: 550px;
+    margin: 0 !important;
+    /* border: 1px solid; */
+    padding: 0 !important;
+}
+
+.profilebar{
+    position: absolute;
+    bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+ 
+.profilebar img{
+    margin-left: 5px;
+    margin-top: 5px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 3px;
+    cursor: pointer;
+
+    /* border: 1px solid; */
+}
+
+.profilebar span{
+    font-size: medium;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    
+
+}
+
+.videoDiv .sideBar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: 25px;
+    margin-right: 10px;
+     
+    height: 55%;
+
+}
+
+.sideBar img{
+    height: 30px;
+    cursor: pointer;
+
+}
+
+.sideBar span{
+    font-size: 30px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    margin: 0;
+     
+}
+
+.videoDiv .deletePage{
+    background-color: #fff;
+    position: absolute;
+    right: 0px;
+    bottom: 30px;
+    height: 55%;
+    width: 60%;
+    box-shadow: 0px 0px 5px #42333398;
+    border-radius: 3px;
+    display: none;
+
+}
+
+
+ 
+
+.videoDiv .deletePage ul { 
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+     
+    margin-top: 7.5px;
+ 
+}
+.deletePage ul li{
+     
+    padding: 11.4px;
+    &:hover{
+        background-color: rgba(0, 0, 0, 0.11);
+    }
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+
+}
+
+.deletePage ul :nth-last-child(6){
+    color: red;
+
+}
+.deletePage ul :nth-last-child(5){
+    color: blue;
+
+}
+
+
+
+ @media (min-width:768px) {
+    .videoDiv .deletePage ul li{
+        padding: 16px;
+    }
+     .videoDiv .deletePage{
+        width: 250px;
+        bottom: 100px;
+        right: -250px;
+        border-radius: 20px;
+     }
+    
+}
+
+ 
+
+.btnDiv{
+    
+    width: 300px;
+    text-align: center;
+    border: 2px solid;
+    
+    background-color: white;
+    z-index: 1;
+    width: 319px;
+    margin: 0;
+    padding: 2px;
+    position: absolute;
+    bottom: 28px;
+     
+     
+}
+.btnDiv img{
+    height: 30px;
+    cursor: pointer;
+}
+
+.uploadBox{
+    width: 140px;
+    box-shadow: 0px 0px 4px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 65px;
+    z-index: 10;
+    background-color: #fff;  
+    display: none;  
+ }
+ 
+ 
+.uploadBox ul{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+      
+     padding: 3px 5px;
+     
+}
+.uploadBox ul li{
+    list-style: none;
+}
+.uploadBox ul li img{
+    height: 20px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+
+
+ .uploadBox ul:nth-child(2),
+.uploadBox ul:nth-child(3) {
+    border-top: 1px solid #ccc;
+}
+
+
+.comment{
+    border: 2px solid;
+    height: auto;
+    width: 100%;
+ }
+
+ 
