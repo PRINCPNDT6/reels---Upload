@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    
 }
 
 h1, h3{
@@ -9,37 +9,6 @@ h1, h3{
 }
 
 
-.projectDiv{
-    /* display: flex; */
-    
-    width: 100%;
-     
-    /* height: 100vh; */
-
-    margin: 0;
-    padding: 0;
-    border: 1px solid;
-
- }
-
- @media (max-width:768px) {
-    .projectDiv{
-        flex-direction: column;
-    }
-    .videoContainer{
-            /* height: 600px; */
-
-    }
-    
-    
- }
-
-
- .likePost{
-    border: 2px solid;
-    width: 100%;
-    height: auto;
-}
 
 .videoContainer{
     
@@ -49,10 +18,10 @@ h1, h3{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
-    height: 100vh;
+    
+    height: 650px;
     border: 1px solid;
-    /* border: 10px solid; */
+     
      
      
 }
@@ -61,7 +30,7 @@ h1, h3{
     overflow-x: hidden;
     margin-top: 15px;
     margin-bottom: 20px;
-    /* border: 2px solid; */
+    
     height: 550px;
     width: 320px;
 
@@ -80,9 +49,7 @@ h1, h3{
 }
  
  
-/* .videoDiv{
-    height: 500px;
-} */
+ 
  .profilebar{
     bottom: 30px;
  }
@@ -90,12 +57,12 @@ h1, h3{
  
 
 .videoDiv{
-    /* border: 1px solid; */
+     
     position: relative;
     width: 300px;
     height: 550px;
     margin: 0 !important;
-    /* border: 1px solid; */
+    
     padding: 0 !important;
 }
 
@@ -231,7 +198,7 @@ h1, h3{
     margin: 0;
     padding: 2px;
     position: absolute;
-    bottom: 28px;
+    bottom: 0;
      
      
 }
