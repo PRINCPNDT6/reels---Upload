@@ -22,7 +22,7 @@ h1, h3{
     height: 650px;
     border: 1px solid;
      
-     
+
      
 }
 .videoBox{
@@ -33,6 +33,7 @@ h1, h3{
     
     height: 550px;
     width: 320px;
+    /* border: 1px solid; */
 
      
      
@@ -124,31 +125,43 @@ h1, h3{
      
 }
 
-.videoDiv .deletePage{
+  .videoDiv .deletePage{
     background-color: #fff;
     position: absolute;
-    right: 0px;
-    bottom: 30px;
-    height: 55%;
-    width: 60%;
+    right: 0;
+    /* bottom: 30px; */
+    bottom: 0;
+    /* height: 200px; */
+    width: 250px;
+    border: 1px solid;
     box-shadow: 0px 0px 5px #42333398;
-    border-radius: 3px;
+    border-radius: 5px;
     display: none;
+     
 
 }
+
+/* @media (min-width:768px) {
+    .videoDiv .deletePage{
+        /* right: -250px; */
+    }
+    
+} */
+
 
 
  
 
-.videoDiv .deletePage ul { 
+ .videoDiv .deletePage .ul { 
     list-style: none;
     display: flex;
     flex-direction: column;
      
-    margin-top: 7.5px;
+    /* margin-top: 7.5px; */
+    margin-bottom: 7.5px;
  
 }
-.deletePage ul li{
+.li{
      
     padding: 11.4px;
     &:hover{
@@ -157,30 +170,20 @@ h1, h3{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 13px;
     cursor: pointer;
+    list-style: none;
 
 }
 
-.deletePage ul :nth-last-child(6){
+ #report, #delete {
     color: red;
-
-}
-.deletePage ul :nth-last-child(5){
-    color: blue;
-
-}
+ }
 
 
 
  @media (min-width:768px) {
-    .videoDiv .deletePage ul li{
+    .videoDiv  .li{
         padding: 16px;
-    }
-     .videoDiv .deletePage{
-        width: 250px;
-        bottom: 100px;
-        right: -250px;
-        border-radius: 20px;
-     }
+    }     
     
 }
 
@@ -251,4 +254,69 @@ h1, h3{
     width: 100%;
  }
 
- 
+ .playIconBox{
+     position: absolute;
+     left: 50%;
+     top: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+     background-color: rgba(0, 0, 0, 0.35);
+     height: 120px;
+     width: 120px;
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     opacity: 0;
+     transition: all 0.25s ease;
+     pointer-events: none;
+
+
+ }
+.playIconBox.show{
+    opacity: 1;
+    transform: translate(-50%, -50% scale(1));
+}
+ .playIcon{
+     height: 60px;
+    width: 60px;
+
+ }
+
+  .muteBox{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    /* background-color: rgba(0, 0, 0, 0.325); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mute, .unmute{
+    height:25px;
+    width: 25px;
+    object-fit: contain;
+     margin: 0;
+    padding: 0;
+  }
+/* 
+  .mute{
+    &:hover{
+
+    }
+  } */
+
+
+  .ri-heart-3-fill{
+    font-size: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    transition: all ease 0.4s;
+    color: red;
+
+  }
