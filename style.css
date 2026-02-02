@@ -8,8 +8,47 @@ h1, h3{
     margin: 0;
 }
 
+body{
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+}
 
+/* mobile */
+@media (max-width:768px) {
+  body{
+    flex-direction: column;
+  }
+}
 
+.info{
+
+  border: 1px solid #ccc;
+  padding: 12px;
+  background-color: #fafafa;
+  /* max-width: 350px; */
+  width: 100%;
+}
+
+.info p{
+  font-size: 14px;
+  line-height: 1.7;
+  color: #333;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  text-align: justify;             
+  text-justify: inter-word;          
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+.info span{
+    color: red;
+    font-weight: bold;
+}
 .videoContainer{
     
     width: 100%;
